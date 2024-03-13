@@ -1,5 +1,4 @@
 const Square = ({ color }) => {
-  // return <div className={`cell ${value ? 'filled' : ''}`}></div>;
   return <div className="cell" style={{backgroundColor: color}}></div>;
 };
 
