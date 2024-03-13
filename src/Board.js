@@ -1,5 +1,6 @@
-const Square = ({ value }) => {
-  return <div className={`cell ${value ? 'filled' : ''}`}></div>;
+const Square = ({ color }) => {
+  // return <div className={`cell ${value ? 'filled' : ''}`}></div>;
+  return <div className="cell" style={{backgroundColor: color}}></div>;
 };
 
 const Board = ({ matrix }) => {
@@ -7,8 +8,8 @@ const Board = ({ matrix }) => {
     <div className="board">
       {matrix.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
-          {row.map((cell, cellIndex) => (
-            <Square key={cellIndex} value={cell} />
+          {row.map((cellColor, cellIndex) => (
+            <Square key={cellIndex} color={cellColor} />
           ))}
         </div>
       ))}
