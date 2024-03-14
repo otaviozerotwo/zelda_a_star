@@ -1,0 +1,19 @@
+.dungeon {
+  display: grid;
+  grid-template-columns: repeat(28, 20px);
+  grid-template-rows: repeat(28, 20px);
+}
+
+.row {
+  display: block;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.filled {
+  background-color: black;
+}

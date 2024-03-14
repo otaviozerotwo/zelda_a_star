@@ -1,10 +1,9 @@
-const Square = ({ color }) => {
-  return <div className="cell" style={{backgroundColor: color}}></div>;
-};
+import Square from '../common/Square';
+import '../../styles/MainMap.css';
 
-const Board = ({ matrix }) => {
+const MainMap = ({ matrix }) => {
   return (
-    <div className="board">
+    <div className="map">
       {matrix.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
           {row.map((cellColor, cellIndex) => (
@@ -16,4 +15,4 @@ const Board = ({ matrix }) => {
   );
 }
 
-export default Board;
+export default MainMap;
