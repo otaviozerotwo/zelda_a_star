@@ -2,3 +2,23 @@
   display: flex;
   justify-content: center;
 }
+
+.row {
+  display: block;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.filled {
+  background-color: black;
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}

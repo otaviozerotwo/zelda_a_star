@@ -1,5 +1,7 @@
-const Square = ({ color }) => {
-  return <div className="cell" style={{backgroundColor: color}}></div>;
+const Square = ({ value }) => {
+  return <div className="cell" >
+    <span className="value">{value}</span>
+  </div>;
 };
 
 export default Square;

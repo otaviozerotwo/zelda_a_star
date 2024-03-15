@@ -4,16 +4,4 @@
   grid-template-rows: repeat(42, 20px);
 }
 
-.row {
-  display: block;
-}
 
-.cell {
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-}
-
-.filled {
-  background-color: black;
-}
