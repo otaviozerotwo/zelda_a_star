@@ -1,6 +1,6 @@
 import Square from './Square';
 
-const MatrixDisplay = ({ matrix }) => {
+const MatrixDisplayDungeon = ({ matrix }) => {
   return (
     <div className="dungeon">
       {matrix.map((row, rowIndex) => (
@@ -16,4 +16,4 @@ const MatrixDisplay = ({ matrix }) => {
   );
 };
 
-export default MatrixDisplay;
+export default MatrixDisplayDungeon;

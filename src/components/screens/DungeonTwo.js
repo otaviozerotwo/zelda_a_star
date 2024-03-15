@@ -1,4 +1,4 @@
-import MatrixDisplay from '../common/MatrixDisplay';
+import MatrixDisplayDungeon from '../common/MatrixDisplayDungeon';
 import '../../styles/Dungeon.css';
 
 const coust = {
@@ -364,7 +364,7 @@ const matrixWithValues = assignValuesToMatrix(matrix, coust);
 const DungeonTwo = () => {
   return (
     <div>
-      <MatrixDisplay matrix={matrixWithValues} />
+      <MatrixDisplayDungeon matrix={matrixWithValues} />
     </div>
   );
 }
